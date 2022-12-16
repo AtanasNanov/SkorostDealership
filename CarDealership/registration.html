@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Автокъща  Скорост - Регистрация</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="bg-gradient">
+	<div class="navbar">
+		<ol>
+			<li><a href="index.html">Главна страница</a></li>
+			<li><a href="registration.html">Регистрация</a></li>
+			<li><a href="about.html">За нас</a></li>
+		</ol>
+	</div>
+	<br>
+	<center><h1 style="color:whitesmoke;">Регистрирайте автомобил</h1></center>
+	<center>
+	<form id="car-registration" onsubmit="return process()" action="formresults.html"method="GET">
+		<label for="brand" style="font-size:21px;">Марка:</label><br>
+  		<input type="text" id="brand" name="brand" required placeholder="Марка на автомобила"><br>
+
+		<label for="model" style="font-size:21px;">Модел:</label><br>
+		<input type="text" id="model" name="model" required placeholder="Модел на автомобила"><br>
+
+		<label for="engine" style="font-size:21px;">№ Двигател:</label><br>
+		<input type="text" id="engine" name="engine" maxlength="15" required placeholder="№ Двигател на автомобила">
+
+		<h3 id="car-colorid" style="font-size:21px;">Цвят:</h3>
+		<select id="car-colorid" name="car-color">
+        	<option value="червен">Червен</option>
+        	<option value="черен">Черен</option>
+        	<option value="бял">Бял</option>
+        	<option value="сив">Сив</option>
+        	<option value="син">Син</option>
+        	<option value="Жълт">Жълт</option>
+        </select>
+		<h3 id="metallic" style="font-size:21px;">Металик:</h3>
+		<label class="answers">
+   			<input type="radio" name="choice-radio">
+  			Да
+		</label>
+		<label class="answers">
+   			<input type="radio" name="choice-radio">
+  			Не
+		</label><br>
+		<br>
+		<label for="compartment" style="font-size:21px;">Купе:</label><br>
+		<input type="text" id="compartment" name="compartment" required placeholder="Вид купе на автомобила"><br>
+
+		<label for="price" style="font-size:21px;">Цена:</label><br>
+		<input type="number" id="price" name="price" placeholder="Цена в лв.">
+		<br>
+		<br>
+		<input type="submit" value="Въвеждане">
+	</form>
+	</center>
+</div>
+</body>
+</html>

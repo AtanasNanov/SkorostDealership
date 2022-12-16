@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Автокъща  Скорост - Резултати</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center style="font-size:36px">
+	<div id="results">
+	</div>
+	<br>
+	<br>
+	<a href="registration.html">Обратно към формата</a>
+	<script>
+		const resultsList = document.getElementById('results')
+		new URLSearchParams(window.location.search).forEach((value,name) => {
+			resultsList.append(`${name}: ${value}`)
+			resultsList.append(document.createElement('br'))
+		})
+	</script>
+</center>
+</body>
+</html>
